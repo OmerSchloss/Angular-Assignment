@@ -64,6 +64,13 @@ after {
     padding: 0 16px;
     width: 235px;
     height: 50px;
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 #login form input[type="text"] {

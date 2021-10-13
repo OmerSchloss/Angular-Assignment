@@ -11,7 +11,7 @@
 
 ## main window
 
-![image](https://user-images.githubusercontent.com/15383425/137146475-0f97712f-493d-4429-907c-1cece34e64fc.png)
+![image](https://user-images.githubusercontent.com/15383425/137177518-d6b94ede-00eb-4c9d-8f6b-e008e7edb904.png)
  
  
  ## feed window

@@ -5,9 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { InputCameraSettingComponent } from './input-camera-setting/input-camera-setting.component';
 import { CameraFeedComponent } from './camera-feed/camera-feed.component';
+import { ModalModule } from './popup-window';/********************************************** */
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule,ModalModule,],
   declarations: [
     AppComponent,
     InputCameraSettingComponent,

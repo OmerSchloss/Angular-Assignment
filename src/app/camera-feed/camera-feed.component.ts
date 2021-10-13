@@ -6,7 +6,6 @@ import { Camera } from '../camera-details';
 	selector: 'app-camera-feed',
 	template: `
 			<div>
-				<!-- <h1>:</h1> -->
 				<video #video width="640" height="480"  controls autoplay></video>
 			</div>
 			`

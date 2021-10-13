@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ModalService } from '../popup-window';
 
 @Component({
   selector: 'app-input-camera-setting',
@@ -8,20 +9,22 @@ import { Component, OnInit, Input } from '@angular/core';
 export class InputCameraSettingComponent implements OnInit {
   showPortal=false;
   camera = {
-    IP: '',
-    port: '',
-    user: '',
-    password: '',
+    IP: '10.0.0.15',
+    port: '554',
+    user: 'admin',
+    password: '123456',
   };
-  onSubmitTemplateBased() {
-    if (this.showPortal) {
-      this.showPortal = false;
-    } else {
-      this.showPortal = true;
-    }
-    
-  }
-  constructor() {}
+
+  constructor(private modalService: ModalService) { }
 
   ngOnInit() {}
+
+  openModal(id: string) {
+      this.modalService.open(id);
+  }
+
+  closeModal(id: string) {
+      this.modalService.close(id);
+  }
 }
+

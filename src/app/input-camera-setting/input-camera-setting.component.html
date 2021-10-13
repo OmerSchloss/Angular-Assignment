@@ -2,13 +2,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Camera Setting</title>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
 
 </head>
 <div id="login">
-    <form name='form-login' #myForm="ngForm" (ngSubmit)="onSubmitTemplateBased()">
+
+    <form name='form-login' #myForm="ngForm" (ngSubmit)="openModal('camera-feed')">
+        <img src="../../assets/Logo_in_White-1.png" alt="Logo" title="Logo" width="250vh">
+        <p></p>
         <span class="fontawesome-user"></span>
         <input type="text" id="ip" name="IP" [(ngModel)]="camera.IP" placeholder="IP">
 
@@ -24,12 +25,9 @@
         <input type="submit" [disabled]="!camera.IP ||!camera.port" value="Open camera feed">
     </form>
 
-    <!-- <button (click)="this.showPortal = false">close camera feed</button>
-<window *ngIf="showPortal">
-  <h2>Hello world from amother window!!</h2>
-  <button (click)="this.showPortal = false">Close me!</button>
-</window>-->
-
-    <div id="container" *ngIf="showPortal">
+    <jw-modal id="camera-feed">
+        <h1>Camera feed:</h1>
         <app-camera-feed></app-camera-feed>
-    </div>
+        <p></p>
+        <button (click)="closeModal('camera-feed');">Close</button>
+    </jw-modal>

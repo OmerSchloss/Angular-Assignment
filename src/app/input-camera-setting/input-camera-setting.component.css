@@ -30,12 +30,12 @@ after {
 
 #login {
     margin: 5vh auto;
-    width: 320px;
+    width: 295px;
 }
 
 #login form {
     margin: auto;
-    padding: 22px 22px 22px 22px;
+    padding: 22px 22px 25px 25px;
     width: 100%;
     border-radius: 5px;
     background: #282e33;
@@ -89,7 +89,7 @@ after {
 #login form input[type="submit"] {
     background: #b5cd60;
     border: 0;
-    width: 100%;
+    width: 290px;
     height: 40px;
     border-radius: 3px;
     color: white;

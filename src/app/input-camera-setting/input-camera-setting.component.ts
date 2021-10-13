@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./input-camera-setting.component.css'],
 })
 export class InputCameraSettingComponent implements OnInit {
-  showPortal = false;
+  showPortal=false;
   camera = {
     IP: '',
     port: '',
@@ -19,6 +19,7 @@ export class InputCameraSettingComponent implements OnInit {
     } else {
       this.showPortal = true;
     }
+    
   }
   constructor() {}
 

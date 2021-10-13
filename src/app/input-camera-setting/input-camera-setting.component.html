@@ -1,0 +1,36 @@
+<section class="sample-app-content">
+<h1>camera setting</h1>
+<form #myForm="ngForm" (ngSubmit)="onSubmitTemplateBased()">
+    <p>
+        <label>IP:</label>
+        <input type="text" name="IP" [(ngModel)]="camera.IP" required />
+    </p>
+    <p>
+        <label>port:</label>
+        <input type="number" name="port" [(ngModel)]="camera.port" required />
+    </p>
+    <p>
+        <label>user:</label>
+        <input type="text" name="user" [(ngModel)]="camera.user" required />
+    </p>
+    <p>
+        <label>password:</label>
+        <input type="password"
+               name="password"
+               [(ngModel)]="camera.password"
+               required />
+    </p>
+    <p>
+        <button type="submit">Open camera feed</button>
+    </p>
+</form>
+<!-- <button (click)="this.showPortal = false">close camera feed</button>
+<window *ngIf="showPortal">
+  <h2>Hello world from amother window!!</h2>
+  <button (click)="this.showPortal = false">Close me!</button>
+</window>-->
+</section> 
+
+<div *ngIf="showPortal">
+<app-camera-feed></app-camera-feed>
+</div>
